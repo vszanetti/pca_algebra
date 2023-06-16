@@ -38,7 +38,7 @@ canal_verde = imagem[:, :, 1].astype(float)
 canal_azul = imagem[:, :, 2].astype(float)
 
 #aplica PCA a cada canal de cor
-l = 2
+l = 50 #altere esse valor para o quão comprimida a imagem deve estar
 m_vermelho, P_vermelho, Y_vermelho = PCA(canal_vermelho, l)
 m_verde, P_verde, Y_verde = PCA(canal_verde, l)
 m_azul, P_azul, Y_azul = PCA(canal_azul, l)
