@@ -16,4 +16,4 @@ PCA ( X , l ):
 8. Retorne m, P e Y
 ```
 
-❗: Este programa foi feito exclusivamente para um trabalho acadêmico.
+❗Este programa foi feito exclusivamente para um trabalho acadêmico.
