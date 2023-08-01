@@ -1,7 +1,8 @@
-#Implementação do método PCA para comprimir imagens.
+# Implementação do método PCA para comprimir imagens.
 
 Execução de um trabalho de Álgebra Linear. A implementação do PCA neste código foi feita com base no pseudocódigo abaixo:
 
+```
 PCA ( X , l ):
 
 1. Crie um vetor m dado pela média das linhas de X
@@ -13,3 +14,6 @@ PCA ( X , l ):
 6. Crie uma matriz P com v0, v1, …, v[n] como colunas.
 7. Calcule Y = VP
 8. Retorne m, P e Y
+```
+
+❗: Este programa foi feito exclusivamente para um trabalho acadêmico.
