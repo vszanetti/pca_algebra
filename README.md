@@ -1,6 +1,26 @@
-# Implementação do método PCA para comprimir imagens.
+This Python code implements [Principal Component Analysis](https://en.wikipedia.org/wiki/Principal_component_analysis) (PCA) for image compression by applying the algorithm to the red, green, and blue channels of a BMP image separately, then reconstructing and displaying the compressed result.
 
-Execução de um trabalho de Álgebra Linear. A implementação do PCA neste código foi feita com base no pseudocódigo abaixo:
+The aforementioned algorithm was made through the guidance of the following pseudocode:
+
+```
+PCA (X, l):
+
+1. Create a vector m given by the mean of the rows of X
+    (i.e., each entry of m is the mean of the respective column of X).
+2. Subtract the respective value of m from each entry of X, obtaining a new matrix V.
+3. Calculate the matrix M = V*V (the transpose of V multiplied by V).
+4. Compute the eigenvalues λ0 ≥ λ1 ≥ ⋯ 0 of M, in decreasing order.
+5. Compute an orthonormal eigenbasis v0, v1, … for M, with each v[i] corresponding to λ[i].
+6. Create a matrix P with v0, v1, …, v[n] as columns.
+7. Compute Y = VP
+8. Return m, P, and Y
+```
+❗This program was written exclusively for academic purposes.
+
+***
+Este código Python implementa a [Análise de Componentes Principais](https://pt.wikipedia.org/wiki/Análise_de_componentes_principais) (PCA) para compressão de imagens, aplicando o algoritmo separadamente aos canais de cor vermelho, verde e azul de uma imagem BMP, reconstruindo e visualizando o resultado comprimido.
+
+O algoritmo supracitado foi baseado no seguinte pseudocódigo:
 
 ```
 PCA ( X , l ):
